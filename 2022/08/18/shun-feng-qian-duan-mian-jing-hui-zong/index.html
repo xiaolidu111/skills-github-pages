@@ -1,0 +1,1651 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="顺丰前端面经汇总, xiaolidu-blog">
+    <meta name="description" content="
+面经地址:顺丰科技 前端一面 面经25min_笔经面经_牛客网 (nowcoder.com)
+开场自我介绍
+
+对前端的认识和评价
+
+前端他本身是一个工作,工作的领域是浏览器这部分,现在随着移动端的发展,小程序,和一些app,也会用到前端的">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>顺丰前端面经汇总 | xiaolidu-blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+    <style>
+        body{
+            background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-attachment:fixed;
+        }
+    </style>
+
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">xiaolidu-blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">xiaolidu-blog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">顺丰前端面经汇总</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E9%A1%BA%E4%B8%B0/">
+                                <span class="chip bg-color">顺丰</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E9%9D%A2%E7%BB%8F/" class="post-category">
+                                面经
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-08-18
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    13.7k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <span id="more"></span>
+<p>面经地址:<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/1046560?type=post&amp;order=recall&amp;pos=&amp;page=1&amp;ncTraceId=&amp;channel=-1&amp;source_id=search_post_nctrack&amp;gio_id=C6A9784D2B10EEE136A561616C5FE5B4-1663080716592">顺丰科技 前端一面 面经25min_笔经面经_牛客网 (nowcoder.com)</a></p>
+<h4 id="开场"><a href="#开场" class="headerlink" title="开场"></a>开场</h4><h5 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h5><blockquote>
+</blockquote>
+<h5 id="对前端的认识和评价"><a href="#对前端的认识和评价" class="headerlink" title="对前端的认识和评价"></a>对前端的认识和评价</h5><blockquote>
+<ul>
+<li>前端他本身是一个工作,工作的领域是浏览器这部分,现在随着移动端的发展,小程序,和一些app,也会用到前端的技术,前端本身不仅仅只是页面的展示,随着前后端分离, 前端工程师也需要掌握一些后台的代码,知道怎么从后台拿到数据,接口怎么调用,最重要的是将美工和设计他们弄的页面显示到用户面前,实现网页的交互效果</li>
+<li>前端本身是在设计和后台之间的领域,起到的是呈上启下的作用,这也要求,前端工程师的知识面必须要广</li>
+<li>基本的工具就是html,js,css这三件套,额外还需要等一些框架的知识,还有一些后端的语言</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>前端工程师的主要价值是,为了让页面更好的和用户进行交互,展示用户需要的信息,其他的还有就是提高用户体验,解决其他的问题<br>对未来来说,随着浏览器的发展,有很多的软件可以在浏览器里面运行了,我认为不久的将来,前端知识会成为一个很重要的知识,发展前景还是很好的<br>这就是我对前端的一个认识和评价</p>
+</blockquote>
+<h4 id="js相关"><a href="#js相关" class="headerlink" title="js相关"></a>js相关</h4><h5 id="js的数据类型-引用类型有哪些"><a href="#js的数据类型-引用类型有哪些" class="headerlink" title="js的数据类型,引用类型有哪些"></a>js的数据类型,引用类型有哪些</h5><blockquote>
+<p>js中有8种数据类型 其中基本数据类型有7种 引用类型有1种</p>
+<ol>
+<li>Number:数字型 有整数和浮点数 ,整数的数据范围:</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>-2^53&nbsp; ——&nbsp; 2^53&nbsp;&nbsp;&nbsp;(包含边界)；</p>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>String:字符串 长度为0或者任意长度的字符串</li>
+<li>null:只有一个值 就是null 代表一个空指针</li>
+<li>undefined:只有一个值undefined 代表未定义的变量</li>
+<li>Boolean:布尔值 有true 和 false两个值</li>
+<li>bigint:js中任意精度的整数 可以安全的存储和操作大整数 即使超出number能够表示的安全整数范围 是chrome67中新增的功能</li>
+<li>symbol:symbol类型的对象永远不相等,几遍创建的时候传入的值是相同的,因此可以解决属性命名冲突的问题,适合用于编码 作为标记</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>引用数据类型:Object</p>
+<ol>
+<li>标准特殊对象:Array Regexp Date Math Error</li>
+<li>特殊对象:Number String Boolean</li>
+<li>可调用对象/执行对象 function</li>
+</ol>
+</blockquote>
+<h5 id="string和object的区别"><a href="#string和object的区别" class="headerlink" title="string和object的区别"></a>string和object的区别</h5><blockquote>
+<p>string是基本数据类型,object是引用数据类型<br>两者的区别就是基本数据类型和引用数据类型的去呗</p>
+<ul>
+<li>基本数据类型是按值访问的,引用数据类型是按引用访问的</li>
+<li>基本数据类型比较的时候是值的比较,有的时候会进行数据类型的转换,引用类型比较的时候是地址的比较</li>
+<li>基本数据类型的存储是放在栈内存中,赋值的时候会创建一个新的值,然后把新的值赋值给变量</li>
+<li>引用数据类型是对象,是属性和方法的集合,引用数据类型可以拥有属性和方法,属性又可以包含基本数据类型和引用数据类型</li>
+<li>引用数据类型的存储需要内存的栈和堆共同完成,栈保持对象的标识符和指向堆内存的指针,也可以说是该对象在堆内存中的地址</li>
+</ul>
+</blockquote>
+<h5 id="怎么创建对象"><a href="#怎么创建对象" class="headerlink" title="怎么创建对象"></a>怎么创建对象</h5><blockquote>
+<p>创建对象有一下几种方式</p>
+<ul>
+<li>字面量的形式直接创建 =={}==</li>
+<li>使用==new Object()==来创建</li>
+<li>工厂函数的形式 就是不是new 而是在里面返回新对象 缺点:属性和方法不能共用</li>
+<li>构造函数的形式创建 用new的方式来创建</li>
+<li>原型的形式创建 构造函数 把属性和方法都放在原型上</li>
+<li>构造函数和原型的形式创建 结合构造函数和原型 这样可以控制变量的私有和共享</li>
+</ul>
+</blockquote>
+<h5 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h5><blockquote>
+<p>闭包是指有权访问另外一个函数作用域中的变量的函数<br>内部函数能够访问到外部函数作用域的变量，当内部函数在外部函数之外调用时，由于js为静态作用域，仍能够访问到外部函数作用域的变量，就形成了闭包<br>参见<a href="onenote:https://onedriveplus-my.sharepoint.cn/personal/x76_onedriveplus_live/Documents/面试笔记/js.one#什么是闭包&amp;section-id={C83195E7-3C44-054A-A526-51F96220F84C}&amp;page-id={1F5CA4C7-51DB-4E45-9B0B-E864D71BF0FD}&amp;end">什么是闭包</a><a href="onenote:https://onedriveplus-my.sharepoint.cn/personal/x76_onedriveplus_live/Documents/面试笔记1/JS.one#闭包&amp;section-id={8A957326-2DFC-42BD-8708-B668E307F52D}&amp;page-id={C289908D-93C1-4948-AC71-96DC91F37FD2}&amp;end">闭包</a></p>
+</blockquote>
+<h5 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h5><blockquote>
+<ol>
+<li>全局作用域和函数作用域<br>  a. 全局作用域<br> i. 最外层函数和最外层函数外面的变量拥有全局作用域<br> ii. 所有未定义直接赋值的变量会自动声明为全局作用域<br> iii. 所有window对象的属性是在全局作用域<br>  b. 函数作用域<br> i. 函数内部的变量,是在函数作用于,函数外面访问不到函数作用域的变量,但是内部能访问到外部的变量<br>  c. 块级作用域<br> i. es6中的let和const可以声明块级作用域,即用{}包着的就是块级作用域<br> ii. let 和const 声明的变量没有变量提升,也不可以重复声明</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>作用域链<br>  在当前作用域使用了一个变量,如果当前作用域没有这个变量,就回去外部的作用域去查找,外部的作用域没有就会去再外部的作用域查找,知道找到最外层的window的全局作用域,这样一层层查找的关系就构成了作用域链</li>
+</ol>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>  作用域链的作用就是保证执行环境对有权访问的所有变量和函数的有序访问,通过作用域链,可以访问到外层环境的变量和函数</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>  作用域链的本质是一个指向变量对象的指针列表,变量对象是一个包含了执行环境中所有变量和函数的对象.作用域链的前端始终都是当前执行上下文的变量对象.全局执行上下文的变量对象也就是全局对象始终是作用域链的最后一个对象</p>
+</blockquote>
+<h4 id="http-x2F-浏览器相关"><a href="#http-x2F-浏览器相关" class="headerlink" title="http/浏览器相关"></a>http/浏览器相关</h4><h5 id="浏览器输入url后的执行过程"><a href="#浏览器输入url后的执行过程" class="headerlink" title="浏览器输入url后的执行过程"></a>浏览器输入url后的执行过程</h5><blockquote>
+<p>（1）<strong>解析URL：</strong>首先会对 URL 进行解析，分析所需要使用的传输协议和请求的资源的路径。如果输入的 URL 中的协议或者主机名不合法，将会把地址栏中输入的内容传递给搜索引擎。如果没有问题，浏览器会检查 URL 中是否出现了非法字符，如果存在非法字符，则对非法字符进行转义后再进行下一过程。<br>（2）<strong>缓存判断：</strong>浏览器会判断所请求的资源是否在缓存里，如果请求的资源在缓存里并且没有失效，那么就直接使用，否则向服务器发起新的请求。<br>（3）<strong>DNS解析：</strong>下一步首先需要获取的是输入的 URL 中的域名的 IP 地址，首先会判断本地是否有该域名的 IP 地址的缓存，如果有则使用，如果没有则向本地 DNS 服务器发起请求。本地 DNS 服务器也会先检查是否存在缓存，如果没有就会先向根域名服务器发起请求，获得负责的顶级域名服务器的地址后，再向顶级域名服务器请求，然后获得负责的权威域名服务器的地址后，再向权威域名服务器发起请求，最终获得域名的 IP 地址后，本地 DNS 服务器再将这个 IP 地址返回给请求的用户。用户向本地 DNS 服务器发起请求属于递归请求，本地 DNS 服务器向各级域名服务器发起请求属于迭代请求。<br>（4）<strong>获取MAC地址：</strong>当浏览器得到 IP 地址后，数据传输还需要知道目的主机 MAC 地址，因为应用层下发数据给传输层，TCP 协议会指定源端口号和目的端口号，然后下发给网络层。网络层会将本机地址作为源地址，获取的 IP 地址作为目的地址。然后将下发给数据链路层，数据链路层的发送需要加入通信双方的 MAC 地址，本机的 MAC 地址作为源 MAC 地址，目的 MAC 地址需要分情况处理。通过将 IP 地址与本机的子网掩码相与，可以判断是否与请求主机在同一个子网里，如果在同一个子网里，可以使用 APR 协议获取到目的主机的 MAC 地址，如果不在一个子网里，那么请求应该转发给网关，由它代为转发，此时同样可以通过 ARP 协议来获取网关的 MAC 地址，此时目的主机的 MAC 地址应该为网关的地址。<br>（5）<strong>TCP三次握手：</strong>下面是 TCP 建立连接的三次握手的过程，首先客户端向服务器发送一个 SYN 连接请求报文段和一个随机序号，服务端接收到请求后向服务器端发送一个 SYN ACK报文段，确认连接请求，并且也向客户端发送一个随机序号。客户端接收服务器的确认应答后，进入连接建立的状态，同时向服务器也发送一个ACK 确认报文段，服务器端接收到确认后，也进入连接建立状态，此时双方的连接就建立起来了。<br>（6）<strong>HTTPS握手：</strong>如果使用的是 HTTPS 协议，在通信前还存在 TLS 的一个四次握手的过程。首先由客户端向服务器端发送使用的协议的版本号、一个随机数和可以使用的加密方法。服务器端收到后，确认加密的方法，也向客户端发送一个随机数和自己的数字证书。客户端收到后，首先检查数字证书是否有效，如果有效，则再生成一个随机数，并使用证书中的公钥对随机数加密，然后发送给服务器端，并且还会提供一个前面所有内容的 hash 值供服务器端检验。服务器端接收后，使用自己的私钥对数据解密，同时向客户端发送一个前面所有内容的 hash 值供客户端检验。这个时候双方都有了三个随机数，按照之前所约定的加密方法，使用这三个随机数生成一把秘钥，以后双方通信前，就使用这个秘钥对数据进行加密后再传输。<br>（7）<strong>返回数据：</strong>当页面请求发送到服务器端后，服务器端会返回一个 html 文件作为响应，浏览器接收到响应后，开始对 html 文件进行解析，开始页面的渲染过程。<br>（8）<strong>页面渲染：</strong>浏览器首先会根据 html 文件构建 DOM 树，根据解析到的 css 文件构建 CSSOM 树，如果遇到 script 标签，则判端是否含有 defer 或者 async 属性，要不然 script 的加载和执行会造成页面的渲染的阻塞。当 DOM 树和 CSSOM 树建立好后，根据它们来构建渲染树。渲染树构建好后，会根据渲染树来进行布局。布局完成后，最后使用浏览器的 UI 接口对页面进行绘制。这个时候整个页面就显示出来了。<br>（9）<strong>TCP四次挥手：</strong>最后一步是 TCP 断开连接的四次挥手过程。若客户端认为数据发送完成，则它需要向服务端发送连接释放请求。服务端收到连接释放请求后，会告诉应用层要释放 TCP 链接。然后会发送 ACK 包，并进入 CLOSE_WAIT 状态，此时表明客户端到服务端的连接已经释放，不再接收客户端发的数据了。但是因为 TCP 连接是双向的，所以服务端仍旧可以发送数据给客户端。服务端如果此时还有没发完的数据会继续发送，完毕后会向客户端发送连接释放请求，然后服务端便进入 LAST-ACK 状态。客户端收到释放请求后，向服务端发送确认应答，此时客户端进入 TIME-WAIT 状态。该状态会持续 2MSL（最大段生存期，指报文段在网络中生存的时间，超时会被抛弃） 时间，若该时间段内没有服务端的重发请求的话，就进入 CLOSED 状态。当服务端收到确认应答后，也便进入 CLOSED 状态。</p>
+</blockquote>
+<h5 id="浏览器的渲染过程-包括html-x2F-css-x2F-js"><a href="#浏览器的渲染过程-包括html-x2F-css-x2F-js" class="headerlink" title="浏览器的渲染过程,包括html/css/js"></a>浏览器的渲染过程,包括html/css/js</h5><blockquote>
+<p>这是一个必考的面试问题，<br>输入 url 后，首先需要找到这个 url 域名的服务器 ip,为了寻找这个 ip，浏览器首先会寻找缓存，查看缓存中是否有记录，缓存的查找记录为：浏览器缓存-》系统缓存-》路由器缓存，缓存中没有则查找系统的 hosts 文件中是否有记录，如果没有则查询 DNS 服务器，得到服务器的 ip 地址后，浏览器根据这个 ip 以及相应的端口号，构造一个 http 请求，这个请求报文会包括这次请求的信息，主要是请求方法，请求说明和请求附带的数<br>据，并将这个 http 请求封装在一个 tcp 包中，这个 tcp 包会依次经过传输层，网络层，数据链路层，物理层到达服务器，服务器解析这个请求来作出响应，返回相应的 html给浏览器，因为 html 是一个树形结构，浏览器根据这个 html 来构建 DOM 树，在 dom树的构建过程中如果遇到 JS 脚本和外部 JS 连接，则会停止构建 DOM 树来执行和下载相应的代码，这会造成阻塞，这就是为什么推荐 JS 代码应该放在 html 代码的后面，之后根据外部央视，内部央视，内联样式构建一个 CSS 对象模型树 CSSOM 树，构建完成后和 DOM 树合并为渲染树，这里主要做的是排除非视觉节点，比如 script，meta 标签和排除 display 为 none 的节点，之后进行布局，布局主要是确定各个元素的位置和尺寸,之后是渲染页面，因为 html 文件中会含有图片，视频，音频等资源，在解析 DOM 的过程中，遇到这些都会进行并行下载，浏览器对每个域的并行下载数量有一定的限制，一<br>般是 4-6 个，当然在这些所有的请求中我们还需要关注的就是缓存，缓存一般通过Cache-Control、Last-Modify、Expires 等首部字段控制。 Cache-Control 和 Expires 的区别在于 Cache-Control 使用相对时间，Expires 使用的是基于服务器 端的绝对时间，因为存在时差问题，一般采用 Cache-Control，在请求这些有设置了缓存的数据时，会先 查看是否过期，如果没有过期则直接使用本地缓存，过期则请求并在服务器校验文件是否修改，如果上一次 响应设置了 ETag 值会在这次请求的时候作为 If-None-Match 的值交给服务器校验，如果一致，继续校验 Last-Modified，没有设置 ETag 则直接验证,Last-Modified，再决定是否返回 304。</p>
+</blockquote>
+<h5 id="event-loop-微任务是什么"><a href="#event-loop-微任务是什么" class="headerlink" title="event loop 微任务是什么"></a>event loop 微任务是什么</h5><blockquote>
+<p>在javascript中 js是一个单线程的语言 js是按照语句出现的顺序执行的,为解决js异步执行的问题,在浏览器的js解析器里面 会将js中的任务分为同步任务和异步任务两种,任务进入任务栈,首先会判断他是同步还是异步 如果是同步,会将其放入主线程中进行执行,如果是异步会放入异步执行的空间,异步任务执行完毕之后会将其放入任务队列,当主线程的任务执行完毕之后呢会看看有没有微任务, 如果有会把微任务都执行了,然后才执行队列中的任务</p>
+</blockquote>
+<p><img src="/images/image_1.e7e5b3a5.png"></p>
+<h6 id="为什么会有事件循环机制"><a href="#为什么会有事件循环机制" class="headerlink" title="为什么会有事件循环机制"></a>为什么会有事件循环机制</h6><p>  js是一个单线程的,就是说一个单独的时间只会做一件事,设计成这样的原因是因为,我们的js主要是在浏览器中执行的,是操作dom的,如果是多线程的,那么如果同时有增加dom 语句和删除dom 语句,那么这个语义就不是特别的明显的,所以是单线程的</p>
+<h6 id="常见的宏任务和微任务"><a href="#常见的宏任务和微任务" class="headerlink" title="常见的宏任务和微任务"></a>常见的宏任务和微任务</h6><blockquote>
+<p>宏任务:==settimeout==,==settimeinterval==,==settimeimediate==,IO操作<br>微任务:==Promise.then/catch/finally==这些方法,还有==MutationObserver==,这个是用来监听dom变化的</p>
+</blockquote>
+<h6 id="为什么要有宏任务和微任务"><a href="#为什么要有宏任务和微任务" class="headerlink" title="为什么要有宏任务和微任务"></a>为什么要有宏任务和微任务</h6><blockquote>
+<p>因为js他本身是单线程的,在执行的过程中,如果没有这个宏任务和微任务的话,如果遇到了一个优先级更高的任务,那么就会阻塞这个任务的执行,所以说要有微任务,来提高这个任务执行的优先级</p>
+</blockquote>
+<h5 id="怎么区分宏任务和微任务"><a href="#怎么区分宏任务和微任务" class="headerlink" title="怎么区分宏任务和微任务"></a>怎么区分宏任务和微任务</h5><blockquote>
+<p>1. 在执行栈中执行一个宏任务。<br>2. 执行过程中遇到微任务，将微任务添加到微任务队列中。<br>3. 当前宏任务执行完毕，立即执行微任务队列中的任务。<br>4. 当前微任务队列中的任务执行完毕，检查渲染，GUI线程接管渲染。<br>5. 渲染完毕后，js线程接管，开启下一次事件循环，执行下一次宏任务（事件队列中取）。<br>微任务：==process.nextTick==、==MutationObserver==、==Promise.then catch finally==<br>宏任务：==I/O==、==setTimeout==、==setInterval==、==setImmediate==、==requestAnimationFrame==</p>
+</blockquote>
+<h4 id="项目问题"><a href="#项目问题" class="headerlink" title="项目问题"></a>项目问题</h4><h5 id="介绍一个项目-在项目中做了什么"><a href="#介绍一个项目-在项目中做了什么" class="headerlink" title="介绍一个项目,在项目中做了什么"></a>介绍一个项目,在项目中做了什么</h5><blockquote>
+<p>我就介绍一下我做的这个vue2的后台管理系统吧，这个项目是针对一个公司后台的人力资源管理项目，项目主要实现的功能有，员工的个人信息管理，员工考勤及员工福利待遇等，主要的页面有首页，角色管理，权限管理，员工管理和员工详情等页面。<br>用的的技术栈有==vue2==，==vuex==，==vuerouter==，==vue-cli==,==elementui==等，对页面进行快速的搭建。<br>我在这里主要完成的是==用户的登录登出==,==权限管理==,==网络请求封装拦截处理==,==全屏和多语言功能支持==这些</p>
+<p>第二个项目是一个类似于京东这样的在线的电商平台的PC端网站，其中包括首页模块，商品各级分类、商品详情，购物车，登录模块，结算与支付等模块<br>我在这里主要完成的是==sku，spu==的商品详情页的展示，第三方登录,以及基于vuex实现的在线购物车与本地购物车的功能。这里面主要用的技术栈是vue3，vuex，vuerouter，vuecli，axios等</p>
+</blockquote>
+<h6 id="vue-组件通信方式"><a href="#vue-组件通信方式" class="headerlink" title="vue 组件通信方式"></a>vue 组件通信方式</h6><blockquote>
+<p>通信方式有</p>
+<ul>
+<li>父子组件通信: ==props==; ==$parent / $children==; ==provide / inject== ; ref ; ==$attrs / $listeners==</li>
+<li>兄弟组件通信: ==eventBus ==; ==vuex==</li>
+<li>跨级通信: ==eventBus==；==Vuex==；==provide / inject== 、==$attrs / $listeners==</li>
+</ul>
+<ol>
+<li>父传子:prop</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>只能是父组件向子组件传递数据,想成了一个单向下行绑定,子组件的数据会随着父组件发生变化<br>可以绑定一个活多个数据,接受的数据类型也不做限制<br>建议使用驼峰命名<br>2. 子传父:$emit(‘事件名’,参数) @事件名= 函数(参数)</p>
+</blockquote>
+<blockquote>
+<p>绑定一个自定义事件,当这个事件被执行的时候就会讲参数传递给父组件,父组件通过v-on监听这个事件得到参数<br>3. eventBus let eventBus = new Vue() 事件总线</p>
+</blockquote>
+<blockquote>
+<p>适用于父子组件和非父子组件,主要的使用步骤就是先创立一个事件处理中心,使用这个时间处理中心来管理事件的监听和触发<br>event.$on(‘事件名’,函数) event.$emit(事件名,参数) event.$off<br>4. 依赖注入</p>
+</blockquote>
+<blockquote>
+<p>主要的api就是inject和provide<br>方法是用在父子孙组件通信,可以避免一层一层的传递数据<br>使用provide方法来发送数据<br>inject方法来接受数据和方法<br><img src="/images/image_2.44042e07.png"><br>5. ref和$refs</p>
+</blockquote>
+<blockquote>
+<p>ref绑定子组件,通过$refs就可以调用子组件内部的数据和方法<br>6. $prent/$children</p>
+</blockquote>
+<blockquote>
+<p>$parent是访问父组件的实例<br>7. $children是访问子组件的实例,但是这个不能保证顺序,并且数据也不是响应式的<br>8. $attrs/$listeners</p>
+</blockquote>
+<blockquote>
+<p>主要是用来进行隔代传递,可以在中间的组件设置使用$attrs 和$listeners实现跨代的通信</p>
+</blockquote>
+<h4 id="23秋招-顺丰前端一面-面经"><a href="#23秋招-顺丰前端一面-面经" class="headerlink" title="23秋招-顺丰前端一面-面经"></a>23秋招-顺丰前端一面-面经</h4><p>地址:<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/1042580?type=post&amp;order=create&amp;pos=&amp;page=1&amp;ncTraceId=&amp;channel=-1&amp;source_id=search_post_nctrack&amp;gio_id=C6A9784D2B10EEE136A561616C5FE5B4-1663121749732">23秋招-顺丰前端一面-面经_笔经面经_牛客网 (nowcoder.com)</a></p>
+<h5 id="项目相关"><a href="#项目相关" class="headerlink" title="项目相关"></a>项目相关</h5><h6 id="项目的后台有没有考虑服务的稳定性"><a href="#项目的后台有没有考虑服务的稳定性" class="headerlink" title="项目的后台有没有考虑服务的稳定性"></a>项目的后台有没有考虑服务的稳定性</h6><blockquote>
+<p>后台不是我做的,所以我没想到这么多,但是提高稳定性可以的方法有</p>
+<ul>
+<li>如果刚开始的时候,这个用户比较少,可以使用单机服务器,但是当用户不断增加,单机服务器可能无法满足这么多用户的使用,所以可以通过部署集群服务器来完善这个体验,通常是用CDN来做这个负载均衡,减轻各个服务器的压力</li>
+<li>如果后面这个业务发展的更快,那么就可以对业务进行细分解耦,将不同的业务分成不同的数据库,服务器,提高服务效率</li>
+<li>还有就是可以对这个用户的请求进行监控,限流,降级这些操作,保证服务器不要过载</li>
+</ul>
+</blockquote>
+<h5 id="静态资源有没有考虑拆分"><a href="#静态资源有没有考虑拆分" class="headerlink" title="静态资源有没有考虑拆分"></a>静态资源有没有考虑拆分</h5><blockquote>
+<p>可以把一些静态资源推送到这个oss对象存储的云服务上面,开启CDN服务,节省这个资源加载的时间<br>也可以通过缓存的策略,将静态资源进行缓存,那么当页面重复加载的时候,就不需要多次发送相同请求了</p>
+</blockquote>
+<h5 id="vue相关"><a href="#vue相关" class="headerlink" title="vue相关"></a>vue相关</h5><h5 id="vue和vue3的区别"><a href="#vue和vue3的区别" class="headerlink" title="vue和vue3的区别"></a>vue和vue3的区别</h5><blockquote>
+<p>|1. `组合api`<br><br>相对于vue2的option api<br>1.组合api能给更好的将逻辑关联的代码单独抽离出来<br>2.使用按需导出，在之后的使用中更好的复用<br>2. 虚拟DOM重写：包括使用patchflag在createvnode时对动态节点标记，和事件监听缓存cacheHandlers，将事件处理函数缓存，并生成内联函数（在箭头函数内部只调用另一个函数），在内联函数中调用<br>3. 数据监听方式变成了Proxy，消除了Object.defineProperty现有的限制（例如无法检测新的属性添加），并提供更好的性能。<br>4. 更快的开发体验<br><br>相比于vue2使用的webpack打包工具 vue3可以使用vite开作为打包工具<br><br><br>5. 更先进的组件<br><br>vue2中每一个组件都必须有一个根元素 而vue3中去掉了这一个限制 不需要每一个组件有一个根元素 方便了代码的书写<br>6. 更好的TS支持 这一部分虽然我们没有学习ts的功能但是我对其也有一定的了解 就是ts是一个面向对象 强类型的语法 配合ts能给让变量有更好的类型声明<br><br>,如果使用webpack来进行打包,项目越大,开始运行的时间就越长,热重载也也会有几秒的额延迟 如果使用vite来作为vue2的开发构建工具的话 就可以减少这种等待的情况<br>原因是因为vite省略了开发环境的打包过程 利用浏览器去解析import 在服务端按需变异返回<br>7. 按需编译 体积比vue2更小</p>
+<table>
+<thead>
+<tr>
+<th><br>如果引入了一个功能但是没有使用的话 在编译的时候就会把tree shake掉<br>8. 自定义渲染API</th>
+<th></th>
+</tr>
+</thead>
+</table>
+</blockquote>
+<h5 id="说一下对diff算法的理解"><a href="#说一下对diff算法的理解" class="headerlink" title="说一下对diff算法的理解"></a>说一下对diff算法的理解</h5><blockquote>
+<p>我的理解<br>diff算法是一种同层级之间节点比较的高效算法,只会进行同层的比较,不会跨级进行,比较的时候是从两边向中间进行比较</p>
+<ul>
+<li>比较的方式是:<ul>
+<li>深度优先,同层比较</li>
+<li>比较只会在同层进行,不会跨层级比较</li>
+<li>循环从两边向中间收拢</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>比较的过程<ul>
+<li>首先要收缩旧的节点的数组,将空的开始和结束节点都调过</li>
+<li>对比旧的开始节点和新的结束节点,是否相同通过sel和key,如果不同就新的更新旧的,如果相同就patchvnode进行比较这两个节点的细节更新</li>
+<li>对比旧的结束和新的结束节点,原理相同</li>
+<li>对比旧的开始和新的结束节点,原理相同,比较之后将旧的开始节点放在节点列表的最后</li>
+<li>对比新的开始和旧的结束节点,原理相同,比较之后将旧的结束节点放在真实节点列表最开始</li>
+<li>最后会剩下,老节点剩下就删除,新节点剩下就添加</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>就地复用<ul>
+<li>尽可能复用之前的不去移动节点</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><img src="/images/image_3.eb381864.png"></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>首先会执行patch函数<ul>
+<li>接受两个参数 新旧节点,如果相同就patchVnode,不同就更新新的节点就行了,相同的判断是sel和这个key会否相同</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>patchVnode函数<ul>
+<li>首先判断是不是有文本属性,对比文本属性进行更新<ul>
+<li>老的没有文本 新的有文本 更新为新的</li>
+<li>老的有文本 新的有文本 更新新的</li>
+<li>老的有文本 新的没有文本 删除老的</li>
+</ul>
+</li>
+<li>没有文本属性 有children属性 就调用upadteChildren进行更新</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>updateChildren<ul>
+<li>同层比较深度优先</li>
+<li>之前的比较方式是,每一棵树的每一个节点进行比较,这样的复杂度是n3</li>
+<li>后来就是值比较单层节点之间的关系,复杂度变成了n</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h5 id="keep-alive的两个生命周期是什么"><a href="#keep-alive的两个生命周期是什么" class="headerlink" title="keep-alive的两个生命周期是什么"></a>keep-alive的两个生命周期是什么</h5><blockquote>
+<p>分别是==actived==和==deactived==</p>
+<ul>
+<li>==actived==:组件被激活的时候触发这个钩子函数</li>
+<li>==deactived==:组件被移除的时候触发的钩子函数</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>keep-alive的使用场景和原理</p>
+<ul>
+<li>这个是vue 一个内置组件,可以实现组件的缓存,当组件切换的时候不会对当前的组件进行卸载,一般是和动态路由和动态组件一起完成使用,用于缓存组件</li>
+<li>有三个参数:<ul>
+<li>==include==:表示的是这个范围内的会被缓存</li>
+<li>==exclude==:表示不在这个范围内的会被缓存,这个的优先级要比==include==要高</li>
+<li>==max==:最大的缓存数量</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>基本用法</li>
+</ul>
+</blockquote>
+<blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>keep<span class="token operator">-</span>alive include<span class="token operator">=</span><span class="token string">"a,b"</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>component <span class="token operator">:</span>is<span class="token operator">=</span><span class="token string">"view"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>component<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>keep<span class="token operator">-</span>alive<span class="token operator">&gt;</span>
+
+<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;!-- 正则表达式 (使用 </span><span class="token template-punctuation string">`</span></span>v<span class="token operator">-</span>bind<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">) --&gt;</span><span class="token template-punctuation string">`</span></span>
+<span class="token operator">&lt;</span>keep<span class="token operator">-</span>alive <span class="token operator">:</span>include<span class="token operator">=</span><span class="token string">"/a|b/"</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>component <span class="token operator">:</span>is<span class="token operator">=</span><span class="token string">"view"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>component<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>keep<span class="token operator">-</span>alive<span class="token operator">&gt;</span>
+
+<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;!-- 数组 (使用 </span><span class="token template-punctuation string">`</span></span>v<span class="token operator">-</span>bind<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">) --&gt;</span><span class="token template-punctuation string">`</span></span>
+<span class="token operator">&lt;</span>keep<span class="token operator">-</span>alive <span class="token operator">:</span>include<span class="token operator">=</span><span class="token string">"['a', 'b']"</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>component <span class="token operator">:</span>is<span class="token operator">=</span><span class="token string">"view"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>component<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>keep<span class="token operator">-</span>alive<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<blockquote>
+<p>声明周期函数的触发时机:</p>
+<ul>
+<li>首次进入组件的时候:==beforeRouterEnter==-–==beforeCreate==-–==create==-–==beforeMounted==-–==mounted==-–==actived==-–==…==-–==beforeRouterLeave==-–==deactived==</li>
+<li>再次进入组件: ==beforeRouteEnter ==&gt;==activated ==&gt; ==… …== &gt; ==beforeRouteLeave ==&gt; ==deactivated==</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>==keep-alive==是一个通用的组件,内部定义了一个map来缓存创建过的组件的实例,他会查找内嵌的==component==组件对应的组件的==vnode==,如果该组件在map共存在,那就直接返回他.由于这个component通常的is属性是一个响应式的,会发生变化,所以这个`keep-alive`组件的render函数会重新执行</p>
+</blockquote>
+<h5 id="nextTick是宏任务还是微任务"><a href="#nextTick是宏任务还是微任务" class="headerlink" title="nextTick是宏任务还是微任务"></a>nextTick是宏任务还是微任务</h5><blockquote>
+<p>==nextTick==是是微任务.</p>
+<ul>
+<li>==nextTick==是等待下一次dom更新的方法</li>
+<li>他的出现是为了解决这个dom异步更新获取数据的问题,比如说我们在代码中更新了dom中的一个数据,然后立即获取这个dom中的数据,可以发现这个立即获取的数据是没有发生变化的,而当我们使用了nexttick这个api之后,再去获取这个dom中的数据,就可以发现这个数据已经是更新完成之后的了</li>
+<li>原因是在vue中有个异步更新策略,意思就是当数据发生变化,vue不会立即的更新dom,而是会开启一个队列,把组件更新函数保存在队列里面,在同一事件循环中发生的所有数据的变化会异步的批量更新.这一策略导致我们对数据的修改不会立刻体现在dom上此时如果想要获取dom更新后的dom的状态就需要使用nextTick</li>
+<li>使用方法:<ul>
+<li>在nexttick里面新加一个回调函数,可以在这个回调函数里面获取这个dom更新后的结果</li>
+<li>使用async 和await,在await之后再去获取这个dom更新的结果</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>实现的原理:<ul>
+<li>在修改dom 时候,页面不会立即更新,在源码上而是开启了一个队列,这个队里面有更新页面的相关函数,然后在调用的时候是通过一个promise对象的then方法来完成的异步的更新,这个then方法是一个微任务,他会等待所有的同步任务执行完成之后才去执行这个页面的更新操作,所以立即获取是获取不到的</li>
+<li>而==nextick==他的原理是拿到刚才的那个promise对象,在这合格promise对象再次调用一下这个then方法,把回调函数的值放入这个then中,那么这个里面的回调就会等待上面的页面更新函数执行完成之后才去调用,所以这个时候是可以获取到页面中的值的</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4 id="js相关-1"><a href="#js相关-1" class="headerlink" title="js相关"></a>js相关</h4><h5 id="splice和slice哪个是深拷贝哪个是浅拷贝"><a href="#splice和slice哪个是深拷贝哪个是浅拷贝" class="headerlink" title="splice和slice哪个是深拷贝哪个是浅拷贝"></a>splice和slice哪个是深拷贝哪个是浅拷贝</h5><blockquote>
+<p>splice和slice的区别和特点</p>
+<ul>
+<li>splice<ul>
+<li>是用来删除或者添加数组中的元素,</li>
+<li>接收三个参数,第一个是开始删除的位置,第二个是删除的个数,第三个是加入不是删除的话,添加的元素</li>
+<li>返回值是一个数组,是删除元素组成的数组</li>
+<li>注意:==这种方法会改变原始数组==</li>
+<li>如果使用splice(0,len)这个方法得到的新数组,是一个深拷贝的数组</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>slice<ul>
+<li>是用来从数组中选取元素的</li>
+<li>接收两个参数:起始位置,和结束位置,注意==这个不会截取到结束位置,而是会截取到这个结束位置的前一个==</li>
+<li>返回值是一个数组</li>
+<li>==不会改变原始数组==</li>
+<li>用slice截取的全部的数组,也是深拷贝,改变的haul不会影响之前的值</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h5 id="set和array的区别"><a href="#set和array的区别" class="headerlink" title="set和array的区别"></a>set和array的区别</h5><blockquote>
+<p>set是ES6新增的数据结构,和array 区别如下</p>
+<ul>
+<li>唯一性:set里面的值是唯一的,array 可以重复的</li>
+<li>长度的获取:set.size array.length</li>
+<li>获取元素:array可以通过索引来获取元素,而set则需要通过遍历来获取元素,for of遍历</li>
+<li>添加元素: array.push(item)返回的是数组的长度 set.add(item)返回的是元素的本身</li>
+<li>删除元素:array.splice(start,num) set.delete(item)</li>
+<li>清空元素: array.length = 0 set.clear()</li>
+<li>判断是否存在:array.indexOf(item) !== -1 set.has(item)</li>
+</ul>
+</blockquote>
+<h5 id="canvas了解吗"><a href="#canvas了解吗" class="headerlink" title="canvas了解吗"></a>canvas了解吗</h5><blockquote>
+<p>canvas是什么呢</p>
+<ul>
+<li>canvas用于图形的绘制,通过脚本也就是js 完成 canvas只是图形的容器,必须使用脚本来绘制图形,可以通过多种方法使用canvas来绘制盒子,圆形等</li>
+<li>通常需要一个id属性,然后需要设置一下宽高</li>
+<li>在js脚本里面获取到标签之后进行绘制</li>
+<li>然后是用==getContext(“2d”)==来创建一个对象</li>
+<li>坐标是以左上角作为起点,0,0</li>
+<li>画线的话可以使用<ul>
+<li>moveTo(x,y) 定义线条开始坐标</li>
+<li>lineTo(x,y) 定义线条结束坐标</li>
+<li>然后使用 stroke() 方法来绘制线条:</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>绘制圆形的话,可以使用arc方法<ul>
+<li>==context.arc(x,y,r,sAngle,eAngle,counterclockwise);==</li>
+<li>x 是圆的中心的x坐标</li>
+<li>y 是圆中心的y坐标</li>
+<li>r 是圆的半径</li>
+<li>sAngle 是起始角,用弧度来计算</li>
+<li>eAngle 是结束角,用弧度来计算</li>
+<li>counterclockwise 是顺时针还是逆时针,false是逆时针,true是顺时针</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h5 id="对原型链的理解"><a href="#对原型链的理解" class="headerlink" title="对原型链的理解"></a>对原型链的理解</h5><blockquote>
+<p>什么是原型</p>
+<ul>
+<li>所有的引用类型都有一个==<strong>proto</strong>==的对象,指向的是塔吊构造函数的原型</li>
+<li>所有的函数也都有一个==prototype==的属性,指向的是他的原型对象</li>
+<li>函数的实例的==<strong>proto</strong>==和构造函数的==prototype==是相同的</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>什么是原型链</p>
+<ul>
+<li>当访问一个对象的某个属性时，会先在这个对象本身属性上查找，如果没有找到，则会去它的__proto__隐式原型上查找，即它的构造函数的prototype，如果还没有找到就会再在构造函数的prototype的__proto__中查找，这样一层一层向上查找就会形成一个链式结构，我们称为原型链。</li>
+</ul>
+</blockquote>
+<h4 id="顺丰前端一面面经-笔经面经-牛客网-nowcoder-com"><a href="#顺丰前端一面面经-笔经面经-牛客网-nowcoder-com" class="headerlink" title="顺丰前端一面面经_笔经面经_牛客网 (nowcoder.com)"></a><a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/1042428?type=post&amp;order=create&amp;pos=&amp;page=2&amp;ncTraceId=&amp;channel=-1&amp;source_id=search_post_nctrack&amp;gio_id=C6A9784D2B10EEE136A561616C5FE5B4-1663121749732">顺丰前端一面面经_笔经面经_牛客网 (nowcoder.com)</a></h4><h5 id="自我介绍-1"><a href="#自我介绍-1" class="headerlink" title="自我介绍"></a>自我介绍</h5><blockquote>
+</blockquote>
+<h5 id="对Node-js了解吗-接触过Node-js吗"><a href="#对Node-js了解吗-接触过Node-js吗" class="headerlink" title="对Node.js了解吗,接触过Node.js吗"></a>对Node.js了解吗,接触过Node.js吗</h5><blockquote>
+<p>node.js是接触过的,主要是简单的了解了一下,用来写前端页面的时候处理发请求响应请求的</p>
+<ul>
+<li>什么是nodejs:Node. js是一个基于 Chrome v8引擎的服务器端 JavaScript运行环境,他是高度可扩展的,有一个很大的开源社区npm,里面有很多好用的插件</li>
+</ul>
+</blockquote>
+<h5 id="介绍一下项目"><a href="#介绍一下项目" class="headerlink" title="介绍一下项目"></a>介绍一下项目</h5><blockquote>
+<p>我就介绍一下我做的这个vue2的后台管理系统吧，这个项目是针对一个公司后台的人力资源管理项目，项目主要实现的功能有，员工的个人信息管理，员工考勤及员工福利待遇等，主要的页面有首页，角色管理，权限管理，员工管理和员工详情等页面。<br>用的的技术栈有==vue2==，==vuex==，==vuerouter==，==vue-cli==,==elementui==等，对页面进行快速的搭建。<br>我在这里主要完成的是==用户的登录登出==,==权限管理==,==网络请求封装拦截处理==,==全屏和多语言功能支持==这些<br>第二个项目是一个类似于京东这样的在线的电商平台的PC端网站，其中包括首页模块，商品各级分类、商品详情，购物车，登录模块，结算与支付等模块<br>我在这里主要完成的是==sku，spu==的商品详情页的展示，第三方登录,以及页面展示虚拟长列表的优化等功能。这里面主要用的技术栈是vue3，vuex，vuerouter，vuecli，axios等</p>
+</blockquote>
+<h5 id="为什么选择用vue而不是react"><a href="#为什么选择用vue而不是react" class="headerlink" title="为什么选择用vue而不是react"></a>为什么选择用vue而不是react</h5><blockquote>
+<ul>
+<li>vue他是中国人编写的,有很多的中文文档,阅读起来比较的方便</li>
+<li>vue有很多的组件库,使用起来也很方便</li>
+<li>vue他本身是MVVM的数据模型的,我们在编写的时候只需要管制这个数据层就行了,上手简单</li>
+<li>vue有这个虚拟dom他的性能也还过的过去</li>
+<li>最重要的就是我还没学到react</li>
+</ul>
+</blockquote>
+<h5 id="对react的了解有吗"><a href="#对react的了解有吗" class="headerlink" title="对react的了解有吗"></a>对react的了解有吗</h5><p>react他本来是facebook里面的一个js的库,后来开元路,他的特点是声明式,基于组件还有就是学习一次随处使用,可以开发的应用有很多</p>
+<p>react是一个单向的数据流,也就是说设计的时候数据是从父组件传递到子组件的需要依赖onChange/setState的模式来实现数据的双向绑定,state就是在组件内部管理自己数据的一种方式,可以用setState改变数据.onChange实现双向绑定</p>
+<p>React使用的是JSX语法来实现插值,条件渲染和循环</p>
+<p>在React中组件的更新渲染是从数据发生变化的根组件开始向子组件逐层渲染的,而组件的声明周期中有shouldComponentUpdate这一个钩子函数可以给开发者优化组件在不需要更新的时候不要更新</p>
+<h5 id="vue2和vue3的区别"><a href="#vue2和vue3的区别" class="headerlink" title="vue2和vue3的区别"></a>vue2和vue3的区别</h5><blockquote>
+<p>区别如下</p>
+<ol>
+<li>组合api</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>相对于vue2的option api<br>1.组合api能给更好的将逻辑关联的代码单独抽离出来<br>2.使用按需导出，在之后的使用中更好的复用<br>2. 虚拟DOM重写：包括使用patchflag在createvnode时对动态节点标记，和事件监听缓存cacheHandlers，将事件处理函数缓存，并生成内联函数（在箭头函数内部只调用另一个函数），在内联函数中调用<br>3. 数据监听方式变成了Proxy，消除了Object.defineProperty现有的限制（例如无法检测新的属性添加），并提供更好的性能。<br>4. 更快的开发体验</p>
+</blockquote>
+<blockquote>
+<p>相比于vue2使用的webpack打包工具 vue3可以使用vite开作为打包工具</p>
+<ol start="5">
+<li>更先进的组件</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>vue2中每一个组件都必须有一个根元素 而vue3中去掉了这一个限制 不需要每一个组件有一个根元素 方便了代码的书写<br>6. 更好的TS支持 这一部分虽然我们没有学习ts的功能但是我对其也有一定的了解 就是ts是一个面向对象 强类型的语法 配合ts能给让变量有更好的类型声明</p>
+</blockquote>
+<blockquote>
+<p>,如果使用webpack来进行打包,项目越大,开始运行的时间就越长,热重载也也会有几秒的额延迟 如果使用vite来作为vue2的开发构建工具的话 就可以减少这种等待的情况<br>原因是因为vite省略了开发环境的打包过程 利用浏览器去解析import 在服务端按需变异返回<br>7. 按需编译 体积比vue2更小</p>
+</blockquote>
+<blockquote>
+<p>如果引入了一个功能但是没有使用的话 在编译的时候就会把tree shake掉<br>8. 自定义渲染API</p>
+</blockquote>
+<h5 id="项目的权限控制怎么做的"><a href="#项目的权限控制怎么做的" class="headerlink" title="项目的权限控制怎么做的"></a>项目的权限控制怎么做的</h5><blockquote>
+<p>做法如下</p>
+<ul>
+<li>在这里呢我是考虑了权限控制的思路,现在的权限控制思路有单一的权限控制也就是具体的将权限划分到每个人,每个人都有自己的权限,但是这种权限控制的方案就不太适应现在的企业的高效管理的发展需求,因为每个人设置权限的话工作量巨大也不好管理</li>
+<li>所以我在这个项目里面提供的是RBAC的权限控制方案,这个方案的优点是在方案中新增了中间层这个角色,通过这个角色来分配响应的权限,这样就解决了工作量大不好管理的问题,这样的话每个人可能有很多的角色,这些角色也可能有很多的权限,角色和权限搭配就能够更好的处理权限</li>
+<li>现在的权限一般可以分为三种,分别是页面访问权限.按钮操作权限和api访问权限,这个api访问权限常见于在后端进行拦截,所以我在这里主要做的是页面访问权限和按钮操作权限</li>
+<li>页面访问权限的设计:先给用户分配了角色,每个角色拥有一个或多个权限,这些权限都有自己响应的标识,当用户登录获取资料的时候,会==自动查出用户所拥有的权限的标识==,然后根据这个标识,来查找用户拥有的路由模块,如果没有这个标识就无法访问这个路由模块.在这一部分使用的是,==vue-router新增的addRoutes的方法==,这个方法的含义是动态的添加路由规则</li>
+<li>基本上当用户获取用户资料的时候,后端会给浏览器传送一个该用户所拥有的权限表示的字段,我可以==在设置路由模块的时候==将==路由的相关属性设置==和==权限标识==一样,例如name属性,然后从动态路由中==筛选出name属性在在传递过来的标识中的路由==,将其==放入一个路由规则数组==中,然后将==筛选出来的路由和静态路由==进行合并,这就实现了vuex中的==筛选权限路由==,这个部分是用来生成侧边栏的,将这个生成的路由对象和静态路由对象合并==引入到侧边栏组件==中,按照这个生成的路由来显示侧边栏的菜单</li>
+<li>然后还需要将筛选出来的路由添加到路由表中,在这一步是在路由守卫的地方来使用,如果用户有==token==,访问的不是登录页,而且是之前没有获取用户资料,那么在==第一次获取用户资料==的时候就==需要将这个vuex中筛选出来的路由==利用==router.addRouter==的方法添加到==路由表==中,那么在后续的跳转路由的时候,就可以跳转到路由了</li>
+<li>这里在写法的时候也有一个坑,就是在添加动态路由之后不能仅仅是写next(),而是要写next(to.path)算是进行二次跳转</li>
+<li>然后就是在==退出的时候要重置一下这个路由==,否则的话在退出登录的时候路由的信息==并没有删除==,就会出现后面再访问的时候==看不到菜单,但是输入地址就可以看到相关的页面==,所以需要在退出登录的时候调用一下重置路由的方法,相当于重新初始化了路由</li>
+<li>==然后要把404放在添加路由的最后面==</li>
+<li>按钮控制权限思路也是差不多的,就是==后台会返回一个按钮操作权限的字段==,然后可以将监测这个权限的方法==,单独的抽离出来==,使用==混入的方式,混入到各个组件当中==,当遇到这个==需要判断权限的按钮==的时候呢,就==调用这个方法==,==传入这个权限按钮需要的标识==,看看这个标识是不是在权限访问的数组中,如果是在,那么这个权限的标识就可以访问,如果不在,那么这个按钮就可以控制他不显示或者是禁用</li>
+</ul>
+</blockquote>
+<h5 id="token登录认证的流程"><a href="#token登录认证的流程" class="headerlink" title="token登录认证的流程"></a>token登录认证的流程</h5><p>见<a href="onenote:https://onedriveplus-my.sharepoint.cn/personal/x76_onedriveplus_live/Documents/面试笔记1/简历问题.one#登录登出&amp;section-id={FB61D1AB-6B4A-6C41-9C51-6E24C269F92E}&amp;page-id={7779EE2F-0755-4F5D-9816-EFE674040B78}&amp;end">登录登出</a></p>
+<h5 id="为什么你-token-要保存到-localStorage-里面，放-cookie-里面不行吗"><a href="#为什么你-token-要保存到-localStorage-里面，放-cookie-里面不行吗" class="headerlink" title="为什么你 token 要保存到 localStorage 里面，放 cookie 里面不行吗"></a>为什么你 token 要保存到 localStorage 里面，放 cookie 里面不行吗</h5><blockquote>
+<p>其实是可以的,带上可能带来一些问题<br>浏览器端常用的存储技术是 cookie 、localStorage 和 sessionStorage。</p>
+<ul>
+<li><strong>cookie：</strong>其实最开始是服务器端用于记录用户状态的一种方式，由服务器设置，在客户端存储，然后每次发起同源请求时，发送给服务器端。cookie 最多能存储 4 k 数据，它的生存时间由 expires 属性指定，并且 cookie 只能被同源的页面访问共享。</li>
+<li><strong>sessionStorage：</strong>html5 提供的一种浏览器本地存储的方法，它借鉴了服务器端 session 的概念，代表的是一次会话中所保存的数据。它一般能够存储 5M 或者更大的数据，它在当前窗口关闭后就失效了，并且 sessionStorage 只能被同一个窗口的同源页面所访问共享。</li>
+<li><strong>localStorage：</strong>html5 提供的一种浏览器本地存储的方法，它一般也能够存储 5M 或者更大的数据。它和 sessionStorage 不同的是，除非手动删除它，否则它不会失效，并且 localStorage 也只能被同源页面所访问共享。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>上面三种方式都是存储少量数据的时候的存储方式，当需要在本地存储大量数据的时候，我们可以使用浏览器的 indexDB 这是浏览器提供的一种本地的数据库存储机制。它不是关系型数据库，它内部采用对象仓库的形式存储数据，它更接近 NoSQL 数据库。<br><strong>Web Storage 和 cookie 的区别总结如下：</strong></p>
+<ul>
+<li>Web Storage是为了更大容量存储设计的。Cookie 的大小是受限的，并且每次你请求一个新的页面的时候 Cookie 都会被发送过去，这样无形中浪费了带宽；</li>
+<li>cookie 需要指定作用域，不可以跨域调用；</li>
+<li>Web Storage 拥有 setItem,getItem,removeItem,clear 等方法，不像 cookie 需要前端开发者自己封装 setCookie，getCookie；</li>
+<li>Cookie 也是不可以或缺的：Cookie 的作用是与服务器进行交互，作为 HTTP 规范的一部分而存在 ，而 Web Storage 仅仅是为了在本地“存储”数据而生</li>
+<li>如果&nbsp;cookie&nbsp;被人拦截了，就可以取得所有的&nbsp;session&nbsp;信息</li>
+</ul>
+</blockquote>
+<h5 id="学习js和vue是怎么学习的"><a href="#学习js和vue是怎么学习的" class="headerlink" title="学习js和vue是怎么学习的"></a>学习js和vue是怎么学习的</h5><blockquote>
+<p>主要的学习思路是,我讲一下吧<br>就是现在网上看看有没有相关的资源,因为现在网络发展还挺快的,对于一些学习的话还是很方便的,网上有很多关系vue和js的教学资源,这是一个简单的入门<br>后面就会尝试着去做一下项目,通过项目的编写来加深对这些语言的印象<br>在做项目的过程中,有可能会遇到一些其他的问题,这个时候就可以通过查阅官方文档或者是去一些网站找相关的解决思路了,主要的就是vue的官方网站还有那个mdn ,其他的还有一些论坛,有的别人也总结的挺好的,因为有的官方文档写的不是很容易栋,经过别人的总结就清楚了一点</p>
+</blockquote>
+<h5 id="前端的发展史是什么样的"><a href="#前端的发展史是什么样的" class="headerlink" title="前端的发展史是什么样的"></a>前端的发展史是什么样的</h5><p>前端的可以概括为在浏览器端运行的代码,现在也可以用来开发移动端,桌面端,小程序等等</p>
+<p>在刚开始的时候,前后端是不分家的可以分成几个阶段八</p>
+<ul>
+<li>初期静态网站,刚开始都是单独的静态压面</li>
+<li>后来又有了动态网站的技术,在后端编写前端显示的语言,后端完成数据展示和用户交互的代码,一个url对应一个页面,这样每次加载新页码就需要重新请求数据</li>
+<li>后来又有了ajax,通过这个ajax可以在不刷新浏览器的情况下和后端进行交互,于是就诞生了这个spa单页面应用</li>
+<li>有了这个前后端分离的模式,慢慢的出现了很多前端的框架,大大的提高了开发的效率</li>
+</ul>
+<h5 id="前端的未来发展趋势是怎么样的"><a href="#前端的未来发展趋势是怎么样的" class="headerlink" title="前端的未来发展趋势是怎么样的"></a>前端的未来发展趋势是怎么样的</h5><ul>
+<li>我觉得随着移动端的不断的发展,前端可以越来越关注这个移动端的体验,移动端的适配的能力,比如说小程序和uni-app这些方面</li>
+<li>现在也有一些框架,比如说react这个东西,他就是可以跨端运行,我们学习一次的话,写出来的代码可以在很多的平台运行,所以说这个也是前端的发展方向吧</li>
+<li>还有就是可能这个前端工程师会向全栈这个方法发展,不断的扩充自己的知识面,这样</li>
+</ul>
+<h4 id="地址-顺丰前端一面-笔经面经-牛客网-nowcoder-com"><a href="#地址-顺丰前端一面-笔经面经-牛客网-nowcoder-com" class="headerlink" title="地址:顺丰前端一面_笔经面经_牛客网 (nowcoder.com)"></a>地址:<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/1042375?type=post&amp;order=create&amp;pos=&amp;page=1&amp;ncTraceId=&amp;channel=-1&amp;source_id=search_post_nctrack&amp;gio_id=C6A9784D2B10EEE136A561616C5FE5B4-1663143004539">顺丰前端一面_笔经面经_牛客网 (nowcoder.com)</a></h4><h5 id="什么叫组件化模块化工程化的项目"><a href="#什么叫组件化模块化工程化的项目" class="headerlink" title="什么叫组件化模块化工程化的项目"></a>什么叫组件化模块化工程化的项目</h5><ul>
+<li>模块化:对一些由单独逻辑的业务进行抽象,对其根据项目的情况进行封装组合到一起,比如说登录模块,评论模块这些,组合灵活,方便调用</li>
+<li>组件化: 对某个具体的功能进行封装,比如说分页组件,面板组件,弹窗组件这些,是单独的功能</li>
+<li>工程化,这个是用软件工程的技术和方法进行前端项目的开发维护和管理<ul>
+<li>代码规范: 相同的规范开发</li>
+<li>分支管理: 不同的业务逻辑有不同的分支,最后再合道一个分支上面</li>
+<li>模块管理: 单独的模块是独立且规范的,方便复用</li>
+<li>自动化测试:</li>
+<li>构建:</li>
+<li>部署: 一些脚手架的功能,一些规范化的部署的方法</li>
+</ul>
+</li>
+</ul>
+<h5 id="对axios做过哪些封装"><a href="#对axios做过哪些封装" class="headerlink" title="对axios做过哪些封装"></a>对axios做过哪些封装</h5><blockquote>
+<ul>
+<li>引入axios</li>
+<li>设置baseUrl和超时时间</li>
+<li>用这个create方法生成一个axios对象</li>
+<li>可以给这个对象添加这个请求拦截和响应拦截</li>
+<li>在请求拦截里面处理这个token的统一注入,和主动介入的失效处理</li>
+<li>响应拦截里面处理这个token 服务端的介入之后的结果,还有就是这个数据的处理,因为服务端返回的数据可能不是单纯的数据,而是还会有一些状态码,提示语这些字段,可以将它分离出来</li>
+<li>最后把这个实例导出然后用在这个api接口编写的文件里面</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>axios的请求拦截器的原理如下<br><img src="/images/image_4.fc56c8b2.png"><br>axios作为网络请求的第三方工具, 可以进行请求和响应的拦截,首先会通过create创建一个axios的实例,这里面可以配置基础地址和超时时间,然后axios提供了请求拦截器和响应拦截器的功能,请求拦截器主要处理的是token的统一注入问题,响应拦截器主要处理的是返回的数据异常,和对返回的数据结构进行处理的问题<br>对于请求拦截器,主要的执行任务是判断这个vuex的仓库中是不是有token这个选项 如果有token这个选项判断这个token是不是超时了 如果超时了就让页面定位到登录页 并且删除这个token 返回一个错误 如果这个token没有超时 就在这个请求头里面假如一个字段 Authorization 里面包含这个token的信息 如果没有token的信息的话就什么都不做<br><img src="/images/image_5.bf0c76a5.png"><br>响应拦截器:主要是处理后端响应过来的信息,后端响应过来的信息可能会有一层包装,并不是仅仅就是我们需要的数据,可能还存在一些,响应消息等等,通过这个响应拦截器对这个响应的数据进行分解处理,将有用的信息提取出来,返回给页面请求,响应拦截器也可以判断响应出错的问题,当我们上传token的时候,服务端会判断这个token是否过期,通过在响应拦截器判断token过期,如果过期了,就把这个token给清除掉,然后页面跳转到登录页<br><img src="/images/image_6.12e10fcc.png"></p>
+</blockquote>
+<h5 id="有哪些地方用过axios"><a href="#有哪些地方用过axios" class="headerlink" title="有哪些地方用过axios"></a>有哪些地方用过axios</h5><blockquote>
+<p>接口的编写这个部分用过axios啊,还有什么地方用到过吗<br>还有就是请求拦截,响应拦截这部分也用到过axios<br>设置这个baseURL也用到过<br>生产环境的跨域配置,改写请求路径这部分,我不知道是不是算是用到了</p>
+</blockquote>
+<h5 id="对Promise的理解"><a href="#对Promise的理解" class="headerlink" title="对Promise的理解"></a>对Promise的理解</h5><blockquote>
+<p>promise本身是一种异步编程的解决方案,主要是为了处理这个回调函数多层回调产生的回调地狱的问题,本质上来说他是一个容器,储存着这个里面的任务的执行状态<br>一般来说promise有三个状态分别是pending fuifilled 和rejetced这几个状态,一旦状态改变就无法回到之前的状态,改变状态的本身就是通过这个resolve和reject来实现的<br>这个里面也会提供一些这个状态的方法,比如then catch all race finally这些<br>都有各自的含义</p>
+</blockquote>
+<h5 id="项目中有用到mock吗"><a href="#项目中有用到mock吗" class="headerlink" title="项目中有用到mock吗"></a>项目中有用到mock吗</h5><blockquote>
+<p>有用到过,这个是因为我们在写这个前端代码的时候,有可能后端的相关的接口还没有开发出来,这个时候就可以通过mock数据来模拟从后端获取到的数据,先进行前端的页面渲染,保证业务的完整性<br>使用步骤</p>
+<ul>
+<li>安装mockjs 设置的延迟时间,通过mockjs提供的规则关键词来模拟相关的数据</li>
+<li>前面都是正常的接口请求,只不过在转发请求的时候,要利用mock的mock方法来拦截相关的请求,通过传入的数据给他返回相关的参数</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>代码如下<br><img src="/images/image_7.5083f673.png"></p>
+</blockquote>
+<h5 id="防抖和节流-在项目中什么地方用到过-怎么实现节流"><a href="#防抖和节流-在项目中什么地方用到过-怎么实现节流" class="headerlink" title="防抖和节流,在项目中什么地方用到过,怎么实现节流"></a>防抖和节流,在项目中什么地方用到过,怎么实现节流</h5><blockquote>
+<p>防抖和节流的含义如下</p>
+<ul>
+<li>函数防抖是指在事件被触发 n 秒后再执行回调，如果在这 n 秒内事件又被触发，则重新计时。这可以使用在一些点击请求的事件上，避免因为用户的多次点击向后端发送多次请求。</li>
+<li>函数节流是指规定一个单位时间，在这个单位时间内，只能有一次触发事件的回调函数执行，如果在同一个单位时间内某事件被触发多次，只有一次能生效。节流可以使用在 scroll 函数的事件监听上，通过事件节流来降低事件调用的频率。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>防抖函数的应用场景：</strong></p>
+<ul>
+<li>按钮提交场景：防⽌多次提交按钮，只执⾏最后提交的⼀次</li>
+<li>服务端验证场景：表单验证需要服务端配合，只执⾏⼀段连续的输⼊事件的最后⼀次，还有搜索联想词功能类似⽣存环境请⽤lodash.debounce</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>节流函数的*</strong>*适⽤场景：**</p>
+<ul>
+<li>拖拽场景：固定时间内只执⾏⼀次，防⽌超⾼频次触发位置变动</li>
+<li>缩放场景：监控浏览器resize</li>
+<li>动画场景：避免短时间内多次触发动画引起性能问题</li>
+</ul>
+</blockquote>
+<h5 id="call-apply-bind-的区别"><a href="#call-apply-bind-的区别" class="headerlink" title="call apply bind 的区别"></a>call apply bind 的区别</h5><p><img src="/images/image_8.81b39fcf.png"></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Xiaolidu</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://xiaolidu11.gitee.io/2022/08/18/shun-feng-qian-duan-mian-jing-hui-zong/">https://xiaolidu11.gitee.io/2022/08/18/shun-feng-qian-duan-mian-jing-hui-zong/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Xiaolidu</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E9%A1%BA%E4%B8%B0/">
+                                    <span class="chip bg-color">顺丰</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2022/08/18/di-gui-he-fen-zhi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="递归和分治">
+                        
+                        <span class="card-title">递归和分治</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            递归和分治
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-18
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%80%92%E5%BD%92%E5%92%8C%E5%88%86%E6%B2%BB/">
+                        <span class="chip bg-color">递归和分治</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/08/15/bian-ji-ju-chi-wen-ti-zong-jie/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="编辑距离问题总结">
+                        
+                        <span class="card-title">编辑距离问题总结</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            编辑距离问题总结
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                        <span class="chip bg-color">动态规划</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+                <div class="container row center-align"
+                    style="margin-bottom: 0px !important;">
+                    <div class="col s12 m8 l8 copy-right">
+                        Copyright&nbsp;&copy;
+                        
+                            <span id="year">
+                                2019-2023
+                            </span>
+                            
+                                    <a href="/about" target="_blank">
+                                        Xiaolidu11
+                                    </a>
+                                    |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+                                    |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery"
+                                        target="_blank">Matery</a>
+                                    <br>
+                                    <!-- 站点总字数 -->
+                                    
+                                        &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数
+                                            :&nbsp;<span class="white-color">
+                                                117.3k
+                                            </span>
+                                            
+                                                
+                                                    <!-- 总访问量 -->
+                                                    
+                                                                <!-- 总访问人数 -->
+                                                                
+                                                                    <span id="busuanzi_container_site_pv">
+                                                                        &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                                                                            <span id="busuanzi_value_site_pv"
+                                                                                class="white-color"></span>
+                                                                    </span>
+                                                                    
+                                                                        
+                                                                            <span id="busuanzi_container_site_uv">
+                                                                                &nbsp;|&nbsp;<i
+                                                                                    class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                                                                                    <span id="busuanzi_value_site_uv"
+                                                                                        class="white-color"></span>
+                                                                            </span>
+                                                                            
+                                                                                <br>
+
+                                                                                <!-- 运行天数提醒. -->
+                                                                                
+                                                                                        <br>
+                                                                                        
+                    </div>
+                    <div class="col s12 m4 l4 social-link ">
+                        
+    <a href="https://github.com/xiaolidu111" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub"
+        data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+    
+
+        
+            <a href="mailto:xiaolidu11@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我"
+                data-position="top" data-delay="50">
+                <i class="fas fa-envelope-open"></i>
+            </a>
+            
+
+                
+
+                        
+
+                                
+                                    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1724689773"
+                                        class="tooltipped" target="_blank"
+                                        data-tooltip="QQ联系我: 1724689773" data-position="top"
+                                        data-delay="50">
+                                        <i class="fab fa-qq"></i>
+                                    </a>
+                                    
+
+                                        
+                                            <a href="xiaolidu111" class="tooltipped" target="_blank"
+                                                data-tooltip="关注我的微信: xiaolidu111"
+                                                data-position="top" data-delay="50">
+                                                <i class="fab fa-weixin"></i>
+                                            </a>
+                                            
+
+                                                
+
+                                                        
+                    </div>
+                </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
